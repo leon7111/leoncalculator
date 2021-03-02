@@ -1,0 +1,45 @@
+#include<iostream>
+int pLus(float a, float b, char op);
+float a, b, sum, sub, div, mult;
+using namespace std;
+
+int main()
+{
+	
+	
+	char op;
+     for(bool i=1; i==1;){
+     	cout<<"Enter number you want to calculate = ";
+		cin>>a>>op>>b;
+	 	pLus(a, b, op);
+	 	cout<<"If you want to calculate again press 1 if don't press 0 = ";
+	 	cin>>i;
+	 }
+	
+	 
+	
+ return 0;	
+}
+
+int pLus(float a, float b, char op){
+
+	  float result;
+	  
+	  if(op== '+'){
+	  	result=a+b;
+	   cout<<"your sum is = "<<result<<endl;
+	  } else if(op== '-'){
+	  	result=a*b;
+	   cout<<"your multipication  is = "<<result<<endl;
+	  } else if(op== '*'){
+	  	result=a*b;
+	   cout<<"your multipication  is = "<<result<<endl;
+	  } else if(op== '/'){
+	  	result=a/b;
+	   cout<<"your divide is = "<<result<<endl;
+	  }else{
+	  	cout<<"invalid entry";
+	  }
+	  return result;
+	
+}
